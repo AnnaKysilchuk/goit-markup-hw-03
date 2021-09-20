@@ -12,55 +12,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header">
+        <div class="container">
             <nav class="links">
                 <a href="./index.html" class="logo">Web
                     <span class="logo-black">Studio</span>
                 </a>
                 <ul class="links-nav">
-                    <li><a class="link-nav" href="./index.html">Студия</a></li>
-                    <li><a class="link-nav" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="link-nav" href="#contacts">Контакты</a></li>
+                    <li class="item"><a class="link-nav" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link-nav" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link-nav" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="links-auth">
-                <li><a class="link-auth" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link-auth" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="item"><a class="link-auth" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="link-auth" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
+        </div>
     </header>
 
     <main>
         <!--Hero-->
-        <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="btn">Заказать услугу</button>
-        </section>
+        <div class="container hero-container">
+            <section class="hero">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="btn">Заказать услугу</button>
+            </section>
+        </div>
+
 
         <!--Наши преимущества-->
-        <section class="section">
-            <h2 class="section-title">Наши преимущества</h2>
-            <ul class="benefits">
-                <li>
-                    <h3 class="benefits-title">Внимание к деталям</h3>
-                    <p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3 class="benefits-title">Пунктуальность</h3>
-                    <p class="benefits-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3 class="benefits-title">Планирование</h3>
-                    <p class="benefits-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3 class="benefits-title">Современные технологии</h3>
-                    <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <section class="section">
+                <h2 class="section-title">Наши преимущества</h2>
+                <ul class="benefits">
+                    <li>
+                        <h3 class="benefits-title">Внимание к деталям</h3>
+                        <p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="benefits-title">Пунктуальность</h3>
+                        <p class="benefits-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="benefits-title">Планирование</h3>
+                        <p class="benefits-text">Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="benefits-title">Современные технологии</h3>
+                        <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
         <!--Чем мы занимаемся-->
         <section class="section">

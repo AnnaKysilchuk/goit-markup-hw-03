@@ -14,6 +14,15 @@ body {
   color: var(--main-color);
 }
 
+.container {
+  display: flex;
+  outline: 2px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
 /* header */
 
 .header {
@@ -21,6 +30,10 @@ body {
 }
 
 .logo {
+  display: flex;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -36,9 +49,14 @@ body {
 .logo > .logo-white {
   color: #ffffff;
 }
-
+.links {
+  display: flex;
+  align-items: center;
+}
 .links-nav,
 .links-auth {
+  display: flex;
+  padding: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -46,11 +64,16 @@ body {
   color: inherit;
 }
 
-li > .link-nav {
+.links-auth {
+  margin-left: auto;
+  align-items: center;
+}
+
+.link-nav {
   color: var(--main-color);
 }
 
-li > .link-auth {
+.link-auth {
   color: var(--second-color);
 }
 
@@ -60,15 +83,31 @@ li > .link-auth {
 .links-auth :focus {
   color: var(--mark-color);
 }
+
+.links-nav .item + .item {
+  margin-left: 50px;
+}
+
+.links-auth .item + .item {
+  margin-left: 50px;
+}
+
 /* main */
 
 /* hero */
-.hero {
+.hero-container {
   background-color: var(--second-background-color);
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero {
+  margin: auto;
+  text-align: center;
 }
 
 .hero-title {
+  width: 696px;
+  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -81,6 +120,9 @@ li > .link-auth {
 
 .btn {
   background-color: var(--mark-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -91,7 +133,7 @@ li > .link-auth {
 
 .btn:hover,
 .btn:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 /* benefits */
