@@ -38,10 +38,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.current {
-  color: var(--mark-color);
-}
-
 .no-gap {
   display: block;
 }
@@ -117,6 +113,11 @@ body {
 
 .links-auth .item + .item {
   margin-left: 50px;
+}
+
+
+.current {
+  color: var(--mark-color);
 }
 
 /*-----------------------main-----------------------------*/
