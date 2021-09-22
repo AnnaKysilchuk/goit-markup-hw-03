@@ -38,6 +38,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.current {
+  color: var(--mark-color);
+}
+
+.no-gap {
+  display: block;
+}
 
 /*-----------------------header-----------------------------*/
 
@@ -167,8 +174,6 @@ body {
 
 .benefits {
   display: flex;
-  padding: 0;
-  margin: auto;
 }
 
 .benefits .item {
@@ -180,7 +185,6 @@ body {
 }
 
 .benefits-title {
-  margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -190,15 +194,10 @@ body {
 }
 
 .benefits-text {
-  margin: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
-}
-
-.current {
-  color: var(--mark-color);
 }
 
 /*-----------------------activity-----------------------------*/
@@ -209,8 +208,6 @@ body {
 
 .activity {
   display: flex;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .activity .item + .item {
@@ -225,8 +222,6 @@ body {
 
 .team {
   display: flex;
-  padding: 0;
-  margin: 0 auto;
 }
 
 .team .item {
@@ -239,7 +234,8 @@ body {
 }
 
 .team-title {
-  margin: 30px 0 10px 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -248,7 +244,7 @@ body {
 }
 
 .team-position {
-  margin: 0 0 30px 0;
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 16px;
   text-align: center;
@@ -272,11 +268,6 @@ body {
   padding: 0;
   margin-right: 0;
   margin-bottom: 20px;
-}
-
-.address-list {
-  margin: 0;
-  padding: 0;
 }
 
 .address-list .item + .item {
@@ -306,8 +297,7 @@ body {
 /*-----------------------filter-----------------------------*/
 .portfolio-filter {
   display: flex;
-  padding: 0;
-  margin: 0 0 50px 0;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -339,8 +329,6 @@ body {
 .work-example {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
 }
 
 .work-example .item {
@@ -362,7 +350,10 @@ body {
 }
 
 .examples-title {
-  margin: 20px 24px 4px 24px;
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+  margin-left: 24px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -371,7 +362,9 @@ body {
 }
 
 .examples-type {
-   margin: 0 24px 20px 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
